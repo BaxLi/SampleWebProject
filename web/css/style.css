@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,600,700)
-	;
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,600,700);
 
 html {
 	font-size: 62.5%;
@@ -314,7 +313,7 @@ em {
 	background-position: center center;
 	background-size: cover;
 	height: 100vh;
-	max-height: auto
+	max-height: 100%;
 }
 
 #products .product-list {
@@ -372,8 +371,7 @@ em {
 	animation: a 1s
 }
 
-@
--webkit-keyframes a { 0%{
+@-webkit-keyframes a { 0%{
 	-webkit-transform: translate3d(0, 100%, 0);
 	transform: translate3d(0, 100%, 0);
 	visibility: visible
@@ -385,8 +383,7 @@ to {
 }
 
 }
-@
-keyframes a { 0%{
+@keyframes a { 0%{
 	-webkit-transform: translate3d(0, 100%, 0);
 	transform: translate3d(0, 100%, 0);
 	visibility: visible
