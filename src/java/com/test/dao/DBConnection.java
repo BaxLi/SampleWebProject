@@ -16,17 +16,15 @@ public class DBConnection {
 			System.out.println("MySQL JDBC Driver Registered!");
 
 			// get hold of the DriverManager
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hplus", "root", "root");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hplus", "root", "Ant1n2n3rivU!");
 		} catch (ClassNotFoundException e) {
 			System.out.println("Where is your MySQL JDBC Driver?");
 			e.printStackTrace();
-
 		}
 
 		catch (SQLException e) {
 			System.out.println("Connection Failed! Check output console");
 			e.printStackTrace();
-
 		}
 
 		if (connection != null) {
