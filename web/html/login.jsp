@@ -4,12 +4,9 @@
 <%@page import="java.text.SimpleDateFormat"%>
 <html>
 <head>
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/style.css">
 <meta charset="ISO-8859-1">
 <title>H+ Sport</title>
-
-
-
 
 </head>
 <body>
@@ -17,7 +14,7 @@
 		<nav class="nav" role="navigation">
 			<div class="container nav-elements">
 				<div class="branding">
-					<a href="#home"><img src="../images/hpluslogo.svg"
+					<a href="#home"><img src="images/hpluslogo.svg"
 						alt="Logo - H Plus Sports"></a>
 				</div>
 				<!-- branding -->
@@ -38,16 +35,8 @@
 	<!-- #home -->
 
 
-
-	<section>
-	
-	<%=displayDate()%>
-	</section>
 	<section id="login" class="section">
 		<div class="container tagline">
-			<% if(request.getAttribute("error")!=null){ %>
-			<em><%=request.getAttribute("error")%></em><br />
-			<%} %>
 
 			<em>LOGIN USER</em>
 			<form action="login" method="post">
@@ -67,7 +56,7 @@
 			<nav class="nav" role="navigation">
 				<div class="container nav-elements">
 					<div class="branding">
-						<a href="#home"><img src="../images/hpluslogo.svg"
+						<a href="#home"><img src="images/hpluslogo.svg"
 							alt="Logo - H Plus Sports"></a>
 						<p class="address">
 							100 Main Street<br> Seattle, WA 98144
@@ -86,13 +75,5 @@
 		<!-- container -->
 	</footer>
 	<!-- footer -->
-<%!
-public String displayDate(){
-
-            SimpleDateFormat dateFormat = new SimpleDateFormat("YYYY-mm-dd hh:mm");
-            Date toDate = Calendar.getInstance().getTime();
-            return dateFormat.format(toDate);
-        }
-%>
 </body>
 </html>
